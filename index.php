@@ -2,9 +2,10 @@
 <html>
 <head>
 <title>郑伟的主页</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="Description" content="西元前笔记">
-<meta name="Keywords" content="西元前笔记">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="西元前笔记" />
+<meta name="Keywords" content="西元前笔记" />
 
 <style type="text/css">
 .sitestyle {	
@@ -71,8 +72,8 @@ a:hover {
 
   <table border="0">
     <tr>
-      <td height="0"><img src="http://luckyet.com/images/jay-150-150.jpg" width="150" ></td>
-      <td valign="top" class="namestyle"><p>Hey, 我是<strong>郑伟</strong>(Vincent Zheng). 不要再看这张照片了，那不是我，他是我喜欢的歌手Jay :)</p>
+      <td height="0"><img src="images/jay-150-150.jpg" width="150" ></td>
+      <td valign="top" class="namestyle"><p>Hey, 我是<strong>郑伟</strong>(Vincent Zheng). 不要再看这张照片了，那不是我，他是我喜欢的明星Jay :)</p>
           <table border="0">
             <tr>
               <td><div align="right">Email：</div></td>
@@ -121,7 +122,7 @@ function utf8Substr($str, $from, $len)
 	return preg_replace('#^(?:[\x00-\x7F]|[\xC0-\xFF][\x80-\xBF]+){0,'.$from.'}'. 
                         '((?:[\x00-\x7F]|[\xC0-\xFF][\x80-\xBF]+){0,'.$len.'}).*#s', 
                         '$1',$str); 
-}
+} 
 
 echo "<div id='art'>";
 for($i=0;$i<count($rssfeed);$i++){//分解开始
@@ -151,7 +152,7 @@ for($i=0;$i<count($rssfeed);$i++){//分解开始
         //标签统一转为小写
         $tag = strtolower($tag);
        
-        //增加文章内容和日期
+                //增加文章内容和日期
         if ($tag == "description") {
         	//$desc = $value; 
            	$desc = utf8Substr($value, 0, 50); 
