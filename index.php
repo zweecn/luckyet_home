@@ -12,6 +12,11 @@
 	font-family: "华文行楷";
 	font-size: xx-large;
 }
+.sitestyle2{	
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: medium;
+	margin: 20px 0px 0px 20px;
+}
 .namestyle {	
 	font-family: Georgia, Times New Roman, Times, serif;
 }
@@ -67,7 +72,7 @@ a:hover {
 
 <body> 
 <div id="sitetitle">
-  <h1 class="sitestyle">幸运依旧</h1>
+  <h1 class="sitestyle">幸运依旧<span class="sitestyle2">Luck Yet</span></h1>
 </div>
 
   <table border="0">
